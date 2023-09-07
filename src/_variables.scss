@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Comfortaa:wght@300;400;600;700&display=swap');
+@mixin non-margins-and-paddings {
+  margin: 0;
+  padding: 0;
+}
+
+// --COLOR PALETTE--
+$white: #ffffff;
+$gray-background: #f6F6F6;
+$gray-input: #e4e4e4;
+$gray-disable: #ceced0;
+$gray-divider: #c4c4c4;
+$gray-helper: #a5a8a8;
+$dark-gray: #343437;
+$black: #020d12;
+
+// --- FONT STYLES ---
+
+//FONT FAMILY
+$font-family: 'Comfortaa', cursive;
+$font-family-body: 'Montserrat', sans-serif;
+
+//FONT SIZES
+$font-size-small: 12px;
+$font-size-body: 14px;
+$font-size-subtitle: 18px;
+$font-size-title: 24px;
+$font-size-extra: 35px;
+
+//FONT WEIGHT
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+
+//---OTHER STYLES---
+
+//BORDERS
+$boder: 1.7px solid $gray-disable;
+$border-radius-regular: 16px;
+$border-radius-large: 20px;
+
+// SCREEN WIDTH
+$screen-sm: 768px;
+$screen-lg: 950px;
+$screen-xl: 1300px;
+
+// ALIGNMENT
+  $center:center;
