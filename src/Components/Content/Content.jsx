@@ -7,7 +7,7 @@ function Content({ title, children }) {
       <div className="content-bg">
         <div className="content-white">
           <h1 className="title-content">{title}</h1>
-          {children}
+          <div>{children}</div>
         </div>
       </div>
     </>

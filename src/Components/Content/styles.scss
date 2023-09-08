@@ -2,11 +2,13 @@
 
 .content-bg {
     position: relative;
-    width: calc(100vw);
-    height: calc(100vh); 
+    width: calc(99vw);
+    height: calc(90vh); 
+    max-height: calc(90vh); 
     background-color: $gray-input;
     z-index: 0;
     margin-top: 92px; 
+    overflow: hidden;
 }
 
 .content-white {
@@ -14,13 +16,16 @@
     top: 25px;
     left: 30px;
     right: 30px;
-    bottom: 20px;
+    bottom: 50px;
     z-index: 2;
     background-color: $white;
     border-radius: 15px; 
     display: flex;
-    justify-content: center;
-    padding: 1.5rem .5rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 1rem 2rem;
 }
 
 .title-content{
