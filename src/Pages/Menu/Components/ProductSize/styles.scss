@@ -1,0 +1,23 @@
+@use '/src/variables' as *;
+
+.product-size-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: justify;
+    gap: 3rem;
+    border-bottom: 3px solid $gray-divider ;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: $font-poppins;
+
+    .menu-size-name{
+       color: $black;
+       @include non-margins-and-paddings;
+    }
+
+    .menu-price{
+        @include non-margins-and-paddings;
+        color: $orange;
+        font-weight: 700;
+    }
+}
