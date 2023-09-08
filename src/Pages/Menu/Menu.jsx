@@ -1,10 +1,14 @@
+import products from "../../data/prices.json";
 import { Content } from "../../Components";
+import { Table } from "./Components";
 import "./styles.scss";
 
 function Menu() {
   return (
     <div className="menu">
-      <Content title="ALL PRODUCTS"></Content>
+      <Content title="ALL PRODUCTS">
+        <Table products={products} />
+      </Content>
     </div>
   );
 }
