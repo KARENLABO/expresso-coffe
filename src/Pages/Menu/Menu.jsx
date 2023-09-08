@@ -6,7 +6,7 @@ import "./styles.scss";
 function Menu() {
   return (
     <div className="menu">
-      <Content title="ALL PRODUCTS">
+      <Content title="OUR MENU">
         <Table products={products} />
       </Content>
     </div>
