@@ -3,7 +3,7 @@
 .product-size-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    text-align: justify;
+    text-align: center;
     gap: 3rem;
     border-bottom: 3px solid $gray-divider ;
     font-size: 25px;
@@ -11,13 +11,15 @@
     font-family: $font-poppins;
 
     .menu-size-name{
-       color: $black;
-       @include non-margins-and-paddings;
+        @include non-margins-and-paddings;
+        color: $black;
+        text-align: justify;
+        padding-left: 1.2rem;
+    
     }
 
     .menu-price{
         @include non-margins-and-paddings;
         color: $orange;
-        font-weight: 700;
     }
 }
