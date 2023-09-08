@@ -1,0 +1,31 @@
+@use '/src/variables' as *;
+
+.NavBar{
+
+    font-family: $font-family;
+    font-size: 30px;
+    font-style: normal;
+    line-height: normal;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly ;
+    align-items: center;
+    text-align: center;
+
+    .NavBar-option{
+        color: $white;
+        font-weight: 300;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        animation: none; 
+        line-height: 40px;
+        text-decoration: none;
+
+    }
+    
+    .NavBar-option:hover {
+        color: #95afce; 
+        font-weight: 700;
+    }
+
+}
