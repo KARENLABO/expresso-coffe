@@ -1,26 +1,28 @@
 @use '/src/variables' as *;
 
 .menu-table{
+    padding: 0 15%;
     .menu-container-products{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .product-container{
         display: flex;
         flex-direction: column;
-        padding: 0 15%;
-        justify-content: flex-start;
+        padding: 0 8%;
+        justify-content: first baseline;
 
     }
 
     .menu-product-title{
         @include non-margins-and-paddings;
         font-family: $font-pacifico;
-        font-size: $font-size-extra;
+        font-size: $font-size-title;
         color: $green;
+        font-weight: 200;
         margin: 1.5rem 0;
         line-height: 1.2;
 
