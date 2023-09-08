@@ -1,7 +1,10 @@
+import { Content } from "../../Components";
+import "./styles.scss";
+
 function Orders() {
   return (
     <div className="orders">
-      <h1>ORDERS</h1>
+      <Content title="COFEE ORDERS"></Content>
     </div>
   );
 }

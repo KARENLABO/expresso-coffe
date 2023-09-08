@@ -4,6 +4,16 @@
   padding: 0;
 }
 
+@mixin center-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; /* Centramos los elementos verticalmente */
+  justify-content: center; /* Centramos los elementos horizontalmente */
+  height: 100vh; /* Ajustamos la altura para ocupar toda la ventana */
+  margin: 0; /* Eliminamos el margen */
+  padding: 0; /* Eliminamos el padding */
+}
+
 // --COLOR PALETTE--
 $white: #ffffff;
 $gray-background: #f6F6F6;

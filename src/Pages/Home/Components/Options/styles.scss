@@ -1,18 +1,18 @@
 @use '/src/variables' as *;
 
-.NavBar{
+.Options{
 
     font-family: $font-family;
     font-size: 30px;
     font-style: normal;
     line-height: normal;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly ;
     align-items: center;
     text-align: center;
 
-    .NavBar-option{
+    .Options-option{
         color: $white;
         font-weight: 300;
         transition: background-color 0.3s ease;
@@ -23,7 +23,7 @@
 
     }
     
-    .NavBar-option:hover {
+    .Options-option:hover {
         color: #95afce; 
         font-weight: 700;
     }

@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./Components";
+import Options from "./Components";
 import { Logo } from "../../Assets";
 import "./styles.scss";
 
@@ -8,7 +8,7 @@ function Home() {
     <div className="home">
       <div className="overlay"></div>
       <div className="content">
-        <NavBar />
+        <Options />
         <div className="logo-image-container">
           <img className="logo-image" src={Logo} alt="logo" />
         </div>
