@@ -18,6 +18,7 @@
 }
 
 .is-selected {
+   color: $blue;
    border: 1.5px solid $blue;
    background-color: transparent;
    cursor: not-allowed;

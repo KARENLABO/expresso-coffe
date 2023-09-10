@@ -1,17 +1,11 @@
-import React from "react";
 import { ChevronLeft, ChevronRight } from "../../Assets/index";
-import { calculatePages } from "../../Helpers";
 import Button from "./Components/Button/Button";
 import "./styles.scss";
 
-const ITEMS_PER_PAGE = 10;
-
-function Pagination({ orders, currentPage, setCurrentPage }) {
-  const totalPages = calculatePages(orders, ITEMS_PER_PAGE);
-
+function Pagination({ pages, currentPage, setCurrentPage }) {
   const buttons = [];
 
-  for (let i = 1; i <= totalPages; i++) {
+  for (let i = 1; i <= pages; i++) {
     buttons.push(
       <Button
         index={i}
@@ -35,7 +29,7 @@ function Pagination({ orders, currentPage, setCurrentPage }) {
       <button
         className="pagination-arrow"
         onClick={() => setCurrentPage(currentPage + 1)}
-        disabled={currentPage === totalPages}
+        disabled={currentPage === pages}
       >
         <img src={ChevronRight} alt="chevronRigth" className="chevron" />
       </button>
