@@ -1,0 +1,30 @@
+@use '/src/variables' as *;
+
+.customer-row-container{
+
+    td{
+        text-align: left;
+        font-family: $font-poppins;
+        border-bottom: 2px solid $gray-divider;
+    }
+
+    .customer-name{
+        font-weight: 600;
+        padding-left: 5px;
+    }
+
+    .order-qty, .total-cost{
+        font-weight: 600;
+        font-family: $font-family;
+        text-align: center;
+    }
+
+
+    .container-chevron{
+        cursor: pointer;
+        .img-chevron{
+            width: 30px;
+        }
+    }
+
+}

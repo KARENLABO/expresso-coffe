@@ -1,27 +1,30 @@
-import { Content, Table } from "../../Components";
+import { Content } from "../../Components";
 import orders from "../../data/orders.json";
+import prices from "../../data/prices.json";
 import "./styles.scss";
-import { transformData } from "../../Helpers";
+import {
+  transformData,
+  addNewPropertiesToJson,
+  groupOrdersByUser,
+} from "../../Helpers"; // Importa la función de transformación
+import SummaryTable from "./components/SummaryTable";
 
-const columns = [
-  { field: "user", title: "CUSTOMER" },
-  { field: "drink", title: "DRINK" },
-  { field: "size", title: "SIZE" },
-];
+const newJson = addNewPropertiesToJson(orders, prices);
 
 function Orders() {
-  // Transform the data before passing it to the table
+  // Transform data before passing it to the table
   const transformedOrders = transformData(
-    orders,
+    newJson,
     "drink", // The field to verify
     "supermochacrapucaramelcream", // The value to transform
-    "Mocha caramel cream" // The expected value
+    "Mocha caramel" // The expected value
   );
+  const usersOrders = groupOrdersByUser(transformedOrders);
 
   return (
     <div className="orders">
       <Content title="COFFEE ORDERS">
-        <Table data={transformedOrders} columns={columns} />
+        <SummaryTable usersOrders={usersOrders} itemsPerPage={3} />
       </Content>
     </div>
   );
