@@ -21,6 +21,7 @@
         @include non-margins-and-paddings;
         font-family: $font-pacifico;
         font-size: $font-size-title;
+        backdrop-filter: blur(2px);
         color: $green;
         font-weight: 200;
         margin: 1.5rem 0;
