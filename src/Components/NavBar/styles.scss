@@ -47,17 +47,15 @@
         font-family: $font-family;
         color: $white;
         font-weight: 300;
-        transition: background-color 0.3s ease;
         cursor: pointer;
-        animation: none; 
         line-height: 40px;
         text-decoration: none;
+        letter-spacing: 3px;
 
     }
     
     .NavBar-option:hover {
-        color: #95afce; 
-        font-weight: 700;
+        color: $orange; 
     }
 
 }
