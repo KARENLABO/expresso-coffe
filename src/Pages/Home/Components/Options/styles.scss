@@ -20,12 +20,12 @@
         animation: none; 
         line-height: 40px;
         text-decoration: none;
+        letter-spacing: 3px;
 
     }
     
     .Options-option:hover {
-        color: #95afce; 
-        font-weight: 700;
+        color: $orange; 
     }
 
 }
