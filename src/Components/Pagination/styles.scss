@@ -1,0 +1,26 @@
+@use '/src/variables' as *;
+
+.pagination-container{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+
+    .pagination-arrow{
+        border: none;
+        background-color: transparent;
+    }
+
+    .pagination-arrow:hover{
+        background-color: $gray-input;
+        border-radius: 5px;
+    }
+
+    .pagination-arrow:disabled{
+        display: none;
+    }
+
+}
+
+.chevron{
+    width: 30px;
+}
