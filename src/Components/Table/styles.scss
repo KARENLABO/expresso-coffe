@@ -1,0 +1,42 @@
+@use '/src/variables' as *;
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    table{
+        min-width: 550px;
+    }
+    
+    .table-titles{
+        color:$green;
+        font-family: $font-poppins;
+        font-size: $font-size-subtitle;
+        text-align: left;
+
+        .title{
+            font-weight: $font-weight-ligth!important;
+            border-bottom: 2px solid $gray-divider;
+            
+            img{
+                width: 20px;
+                margin-left: 5px;
+            }
+        }
+
+    }
+    tbody{
+        td{
+            font-family: $font-poppins;
+            font-weight: $font-weight-ligth!important;
+            border-bottom: 2px solid $gray-divider;
+            font-size: $font-size-subtitle;
+            color: $dark-gray;
+            height: 40px;
+            text-align: justify;
+        }
+    }
+}
