@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Pacifico&family=Poppins:wght@200;300;400;500;600&display=swap');
-@mixin non-margins-and-paddings {
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&family=Delius+Unicase:wght@400;700&family=Open+Sans&family=Pacifico&family=Poppins:wght@200&display=swap');@mixin non-margins-and-paddings {
   margin: 0;
   padding: 0;
 }
@@ -21,26 +20,29 @@ $gray-input: #e4e4e4;
 $gray-disable: #ceced0;
 $gray-divider: #c4c4c4;
 $gray-helper: #a5a8a8;
-$dark-gray: #343437;
+
+$dark-gray: #585858;
 $black: #020d12;
 $orange:#D77821;
 $green:#244E5B;
+$blue: #1677ff;
 
 // --- FONT STYLES ---
 
 //FONT FAMILY
 $font-family: 'Comfortaa', cursive;
-$font-pacifico: 'Pacifico', cursive;
+$font-pacifico: 'Delius Unicase', cursive;
 $font-poppins: 'Poppins', sans-serif;
 
 //FONT SIZES
 $font-size-small: 12px;
-$font-size-body: 14px;
+$font-size-body: 15px;
 $font-size-subtitle: 18px;
-$font-size-title: 24px;
+$font-size-title: 30px;
 $font-size-extra: 35px;
 
 //FONT WEIGHT
+$font-weight-ligth: 300;
 $font-weight-regular: 400;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
@@ -49,7 +51,7 @@ $font-weight-bold: 700;
 //---OTHER STYLES---
 
 //BORDERS
-$boder: 1.7px solid $gray-disable;
+$boder: 2px solid $gray-disable;
 $border-radius-regular: 16px;
 $border-radius-large: 20px;
 
