@@ -14,7 +14,7 @@ function groupOrdersByUser(data) {
 
     const userOrders = userOrdersMap.get(user);
     userOrders.orders.push({ drink, size, price });
-    userOrders.total += parseFloat(price); // Parsea el precio como número antes de sumarlo
+    userOrders.total += parseFloat(price); // Parse the price as a number before adding it
   });
 
   return Array.from(userOrdersMap.values());
