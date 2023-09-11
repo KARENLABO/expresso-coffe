@@ -1,5 +1,9 @@
 function calculateTotalPages(data, itemsPerPage) {
-  return Math.ceil(data.length / itemsPerPage);
+  if (data) {
+    return Math.ceil(data.length / itemsPerPage);
+  } else {
+    return 1;
+  }
 }
 
 export default calculateTotalPages;

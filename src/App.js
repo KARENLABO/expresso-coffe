@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Home, Orders, Payments, Menu, Error } from "./Pages";
 import { DataProvider } from "./ContextProvider/ContextProvider";
+import { ErrorHandler } from "./Components";
 import "./App.scss";
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
   return (
     <div className="App">
       <DataProvider>
-        <RouterProvider router={router} />
+        <ErrorHandler>
+          <RouterProvider router={router} />
+        </ErrorHandler>
       </DataProvider>
     </div>
   );
