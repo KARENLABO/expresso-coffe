@@ -1,0 +1,32 @@
+@use '/src/variables' as *;
+
+.error-page {
+  text-align: center;
+  margin: 2% auto;
+  max-width: 30%;
+  padding: 20px;
+  font-family: $font-pacifico;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 64px;
+    color: $orange;
+    margin: 0;
+  }
+
+  p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  a {
+    
+    color: $blue;
+    font-weight: bold;
+  }
+}
