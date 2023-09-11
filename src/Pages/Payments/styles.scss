@@ -1,5 +1,8 @@
 @use '/src/variables' as *;
 
-.payments{
-    @include center-content;
+.payments {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

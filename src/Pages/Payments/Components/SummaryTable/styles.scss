@@ -1,0 +1,38 @@
+@use '/src/variables'as *;
+
+.summary-table {
+    table {
+     margin-top: 2rem;
+     overflow: auto;
+    }
+
+    thead {
+        th {
+            border-bottom: 2px solid $gray-helper;
+            padding: 1rem;
+            text-align: center;
+        }
+
+    }
+
+    .table-titles {
+        font-family: $font-pacifico;
+        text-align: left;
+
+    }
+
+    .customer {
+        width: 150px;
+    }
+
+    .order-detail{
+        width: 50px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: $screen-sm) {
+    .summary-table{
+        padding-top: 32px;
+    }
+}

@@ -1,0 +1,55 @@
+@use '/src/variables' as *;
+
+.customer-row-container{
+
+    td{
+        text-align: left;
+        font-family: $font-poppins;
+        border-bottom: 2px solid $gray-divider;
+    }
+
+    .customer-name{
+        font-weight: 600;
+        padding-left: 5px;
+    }
+
+    .total {
+        font-weight: 600;
+        font-size: larger;
+        text-align: center;
+        color: $dark-gray;
+    }
+
+    .balance-status{
+        color:$black;
+        font-size: larger;
+        text-align: center;
+        font-weight: 600;
+    
+    }
+
+    .leftover{
+        color: $green;
+        font-weight: 600;
+        font-family: $font-pacifico;
+        text-align: center;
+     
+    }
+
+    .owes{
+        font-weight: 600;
+        color: $orange;
+        font-family: $font-pacifico;
+        text-align: center;
+    }
+
+
+    .container-chevron{
+        text-align: center;
+        cursor: pointer;
+        .img-chevron{
+            width: 30px;
+        }
+    }
+
+}
