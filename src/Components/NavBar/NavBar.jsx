@@ -18,7 +18,7 @@ function NavBar() {
           ORDERS
         </Link>
         <Link to="/payments" className="NavBar-option">
-          PAYMENTS
+          BALANCE
         </Link>
       </div>
     </div>
