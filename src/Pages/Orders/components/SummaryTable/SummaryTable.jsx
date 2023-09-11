@@ -32,7 +32,7 @@ function SummaryTable({ usersOrders, itemsPerPage }) {
             <th className="drink">Drink</th>
             <th className="size">Size</th>
             <th>Total</th>
-            <th></th>
+            <th>Detail</th>
           </tr>
         </thead>
         <tbody>

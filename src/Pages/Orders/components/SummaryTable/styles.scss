@@ -3,13 +3,14 @@
 .summary-table {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 3rem;
+    min-width: 600px;
 
     table {
-        min-width: 550px;
-        max-width: 800px;
+        margin-top: 2rem;
+        overflow-x: scroll;
     }
 
     thead {
@@ -45,4 +46,10 @@
     }
 
 
+}
+
+@media only screen and (max-width: $screen-sm) {
+    .summary-table{
+        margin-top: 32px;
+    }
 }

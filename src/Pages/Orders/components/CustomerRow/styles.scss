@@ -4,19 +4,21 @@
 
     td{
         text-align: left;
-        font-family: $font-poppins;
+        font-family: $font-pacifico;
         border-bottom: 2px solid $gray-divider;
     }
 
     .customer-name{
-        font-weight: 600;
+        font-family: $font-pacifico;
+        color:$dark-gray;
         padding-left: 5px;
     }
 
     .order-qty, .total-cost{
         font-weight: 600;
-        font-family: $font-family;
+        font-family: $font-pacifico;
         text-align: center;
+        color:$dark-gray;
     }
 
 
