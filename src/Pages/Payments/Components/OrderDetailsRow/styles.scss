@@ -1,0 +1,20 @@
+@use '/src/variables' as *;
+
+.order-detail-container{
+    text-align: left;
+
+    td{
+        font-family: $font-poppins;
+        border-bottom: 1px solid $gray-divider;
+    }
+
+    .empty-td{
+        border-bottom:none;
+    }
+
+    .qty-td, .total-td{
+        font-weight: 600;
+        font-family: $font-pacifico;
+        text-align: center;
+    }
+}

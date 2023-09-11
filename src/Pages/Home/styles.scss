@@ -51,7 +51,7 @@
             @include non-margins-and-paddings;
             font-size: 20px;
             font-weight: 300;
-            font-family: $font-family;
+            font-family: $font-pacifico;
            }
 
            h4{
@@ -61,6 +61,23 @@
            }
         }
 
-      
+        @media only screen and (max-width: $screen-sm ) {
+            grid-template-rows: repeat(4, 1fr);
+
+            .description-container {
+                padding: 0 5%;
+                p {
+                    font-size: 12px;
+                    font-weight: 200;
+                }
+            }
+
+            .logo-image-container{
+                text-align: center;
+                .logo-image{
+                    width: 180px;
+                }     
+            }
+        }
     }
 }

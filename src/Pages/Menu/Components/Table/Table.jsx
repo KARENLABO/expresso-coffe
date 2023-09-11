@@ -8,7 +8,7 @@ function Table({ products }) {
     products,
     "drink_name", // The field to check
     "supermochacrapucaramelcream", // The value to transform
-    "Mocha caramel cream" // The expected value
+    "Mocha caramel" // The expected value
   );
 
   return (

@@ -12,7 +12,7 @@ function Options() {
         ORDERS
       </Link>
       <Link to="/payments" className="Options-option">
-        PAYMENTS
+        BALANCE
       </Link>
     </div>
   );

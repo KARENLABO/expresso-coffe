@@ -24,7 +24,7 @@ $gray-helper: #a5a8a8;
 $dark-gray: #585858;
 $black: #020d12;
 $orange:#D77821;
-$green:#244E5B;
+$green:#4290a8;
 $blue: #1677ff;
 
 // --- FONT STYLES ---
@@ -38,8 +38,9 @@ $font-poppins: 'Poppins', sans-serif;
 $font-size-small: 12px;
 $font-size-body: 15px;
 $font-size-subtitle: 18px;
+$font-size-navbar: 23px;
 $font-size-title: 30px;
-$font-size-extra: 35px;
+$font-size-extra: 32px;
 
 //FONT WEIGHT
 $font-weight-ligth: 300;
@@ -56,9 +57,8 @@ $border-radius-regular: 16px;
 $border-radius-large: 20px;
 
 // SCREEN WIDTH
-$screen-sm: 768px;
-$screen-lg: 950px;
+$screen-sm: 400px;
+$screen-md: 800px;
+$screen-lg: 1100px;
 $screen-xl: 1300px;
 
-// ALIGNMENT
-  $center:center;

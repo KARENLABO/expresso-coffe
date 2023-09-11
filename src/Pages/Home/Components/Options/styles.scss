@@ -1,9 +1,8 @@
 @use '/src/variables' as *;
 
 .Options{
-
-    font-family: $font-family;
-    font-size: 30px;
+    font-family: $font-poppins;
+    font-size: $font-size-title;
     font-style: normal;
     line-height: normal;
     display: grid;
@@ -15,17 +14,28 @@
     .Options-option{
         color: $white;
         font-weight: 300;
-        transition: background-color 0.3s ease;
         cursor: pointer;
-        animation: none; 
         line-height: 40px;
         text-decoration: none;
         letter-spacing: 3px;
+        font-size:$font-size-title ;
+        background: linear-gradient(to right, #ffff, #0000); 
+        -webkit-background-clip: text; 
+        color: transparent;
+        transition: background 0.8s; 
 
     }
     
     .Options-option:hover {
-        color: $orange; 
+        background: linear-gradient(to top, $black, $white); 
+        -webkit-background-clip: text; 
+        color: transparent; 
+    }
+
+    @media only screen and (max-width: $screen-sm ) {
+        .Options{
+            font-size: $font-size-small;
+        }
     }
 
 }

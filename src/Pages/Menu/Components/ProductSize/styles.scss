@@ -4,22 +4,25 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    gap: 3rem;
-    border-bottom: 3px solid $gray-divider ;
-    font-size: 25px;
+    font-size: $font-size-subtitle;
     font-weight: 400;
     font-family: $font-poppins;
+    gap: 1rem;
 
     .menu-size-name{
+        height: 30px;
         @include non-margins-and-paddings;
         color: $black;
-        text-align: justify;
-        padding-left: 1.2rem;
+        text-align: left;
+        font-family:$font-pacifico ;
+        font-size: $font-size-body;
     
     }
 
     .menu-price{
         @include non-margins-and-paddings;
         color: $orange;
+        font-family:$font-pacifico ;
+        font-size: $font-size-subtitle;
     }
 }

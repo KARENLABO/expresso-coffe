@@ -1,32 +1,68 @@
 @use '/src/variables' as *;
 
 .menu-table{
-    padding: 0 15%;
     .menu-container-products{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .product-container{
         display: flex;
         flex-direction: column;
-        padding: 0 8%;
+        padding: 8%;
         justify-content: first baseline;
+        border: 3px dashed $gray-helper;
+        border-radius: $border-radius-regular;
+        margin-top: .5rem;
 
     }
 
     .menu-product-title{
         @include non-margins-and-paddings;
         font-family: $font-pacifico;
-        font-size: $font-size-title;
+        font-size: $font-size-navbar;
         backdrop-filter: blur(2px);
-        color: $green;
-        font-weight: 200;
-        margin: 1.5rem 0;
         line-height: 1.2;
-
+        margin-bottom: .5rem;
+        padding-bottom: .5rem;
+        border-bottom:$boder;
     }
+
+
     
+    @media only screen and (max-width: $screen-md ) {
+        .menu-container-products{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .product-container{
+            padding: 3%;
+        }
+    }
+
+    @media only screen and (max-width: $screen-sm) {
+        .menu-container-products{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            overflow-x: scroll;
+            margin-top: 3rem;
+        }
+
+        .product-container{
+            padding: 3%;
+        }
+    }
+
 }
+
+
+
+

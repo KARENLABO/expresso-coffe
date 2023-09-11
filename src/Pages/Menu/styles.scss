@@ -1,5 +1,8 @@
 @use '/src/variables' as *;
 
 .menu{
-    @include center-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
