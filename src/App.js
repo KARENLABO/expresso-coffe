@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Home, Orders, Payments, Menu, Error } from "./Pages";
+import { DataProvider } from "./ContextProvider/ContextProvider";
 import "./App.scss";
 
 function App() {
@@ -26,7 +27,9 @@ function App() {
 
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <DataProvider>
+        <RouterProvider router={router} />
+      </DataProvider>
     </div>
   );
 }
