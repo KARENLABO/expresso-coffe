@@ -1,32 +1,8 @@
 @use '/src/variables' as *;
 
-.content-bg {
-    position: relative;
-    width: calc(99vw);
-    height: calc(90vh); 
-    max-height: calc(90vh); 
-    background-color: $gray-input;
-    z-index: 0;
-    margin-top: 92px; 
-    overflow: hidden;
-}
-
-
 .content-white {
-    background-image: url('../../Assets/coffe-grains.png');
-    background-repeat: no-repeat;
-    background-size: 18%;
-    background-position: bottom left;
-    
-}
-
-.content-white {
-    position: absolute;
-    top: 25px;
-    left: 30px;
-    right: 30px;
-    bottom: 50px;
-    z-index: 2;
+    margin-top: 100px; 
+    z-index: 3;
     background-color: $white;
     border-radius: 15px; 
     display: flex;
@@ -34,11 +10,14 @@
     text-align: center;
     justify-content: flex-start;
     overflow: auto;
-    padding: 2rem 2rem;
-    height: 85%;
+    width: 100%;
+    padding: 1rem 5%;
+    
 }
 
 .title-content{
+    text-align: center;
+    @include non-margins-and-paddings;
     color: $black;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: $font-pacifico;
@@ -46,12 +25,33 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-bottom: 1rem;
 }
 
-.content-inside{
-    max-height: 85%;
+@media only screen and (min-width: $screen-xl) {
+    .content-white {
+        padding: 1rem 20%;
+    }
+}
+@media only screen and (max-width: $screen-lg) {
+    .content-white {
+        padding: 1rem 5%;
+    }
 }
 
+@media only screen and (min-width: $screen-sm) {
+    .content-white {
+        padding: 1rem 10%;
+    }
+}
 
+@media only screen and (max-width: $screen-sm) {
+    .title-content{
+        position: absolute;
+    }
+    .content-white {
+        padding: 1rem 10%;
+    }
+}
 
 
