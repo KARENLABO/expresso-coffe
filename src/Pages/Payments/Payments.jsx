@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 import { DataContext } from "../../ContextProvider/ContextProvider";
 import { Content } from "../../Components";
-import SummaryTable from "./components/SummaryTable";
+import SummaryTable from "./Components/SummaryTable";
 
 import "./styles.scss";
 
