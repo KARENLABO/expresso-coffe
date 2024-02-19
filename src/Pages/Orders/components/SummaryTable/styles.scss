@@ -1,4 +1,4 @@
-@use '/src/variables'as *;
+@use "/src/variables" as *;
 
 .summary-table {
     display: flex;
@@ -17,14 +17,12 @@
         th {
             border-bottom: 2px solid $gray-helper;
         }
-
     }
 
     .table-titles {
         font-family: $font-pacifico;
         text-align: left;
         padding-right: 1rem;
-
     }
 
     .customer {
@@ -44,12 +42,10 @@
     .total-cost {
         font-weight: 700;
     }
-
-
 }
 
 @media only screen and (max-width: $screen-sm) {
-    .summary-table{
+    .summary-table {
         margin-top: 32px;
     }
 }
