@@ -1,4 +1,4 @@
-# EXPRESSO COFFEE Application
+# EXPRESSO COFFEE 
 
 ![Logo](src/Assets/mainpage.png)
 
