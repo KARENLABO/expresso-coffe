@@ -1,5 +1,7 @@
 # EXPRESSO COFFEE Application
 
+![Logo](src/Assets/mainpage.png)
+
 ## Overview
 Welcome to our Expresso Coffee Application! This project aims to streamline café operations by providing a comprehensive platform for managing menu items, open orders, and customer transactions. Developed over a span of three days, this application offers a user-friendly interface tailored to the needs of café staff, including waiters and kitchen personnel.
 
