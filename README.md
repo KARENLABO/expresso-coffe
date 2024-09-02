@@ -1,4 +1,4 @@
-# EXPRESSO COFFEE 
+# Expresso Coffe
 
 ![Logo](src/Assets/mainpage.png)
 
